@@ -1,14 +1,5 @@
 from myFunctions.ler_float import ler_float
-
-def ler_nome(mensagem: str) -> str:
-    while True:
-        nome = input(mensagem).strip()
-        if not nome:
-            print("O nome não pode estar vazio.")
-        elif any(char.isdigit() for char in nome):
-            print("O nome não pode conter números.")
-        else:
-            return nome
+from myFunctions.ler_nome import ler_nome
 
 # Lista para armazenar os dados de todas as pessoas
 pessoas = []
